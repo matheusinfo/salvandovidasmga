@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:image" content="https://user-images.githubusercontent.com/48860569/128648996-f92114fc-c834-468c-94e2-b5e66f2a5703.jpeg" />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/48860569/152652976-4c200db2-6222-4b7c-8f8b-2548e2408d8d.svg" />
       </Head>
       <GlobalStyle />
       <Sidebar />

@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin-top: 100px;
 
   img {
-    width: 600px;
+    width: 400px;
   }
 
   strong {

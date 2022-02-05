@@ -12,7 +12,7 @@ export const Body: React.FC = () => (
     </strong>
     <small>+40k de apaixonados em salvar vidas</small>
     <button>
-      <Link href="/about">Faça parte</Link>
+      <a href="https://www.instagram.com/salvandovidasmaringa/" target="_blank" rel="noreferrer">Faça parte</a>
     </button>
   </Container>
 );

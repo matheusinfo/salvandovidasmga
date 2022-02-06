@@ -8,6 +8,7 @@ type ListItensProps = {
   children: ReactNode;
   name: string;
   active: boolean;
+  onClick: () => void;
 };
 
 export const ListItens: React.FC<ListItensProps> = ({
@@ -16,10 +17,11 @@ export const ListItens: React.FC<ListItensProps> = ({
   path,
   name,
   active,
+  onClick
 }) => (
   <Container>
     <strong>{title}</strong>
-    <Button active={active}>
+    <Button active={active} onClick={onClick}>
       {children}
       <Link href={path} passHref>
         <HyperLink active={active}>{name}</HyperLink>

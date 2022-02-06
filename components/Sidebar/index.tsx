@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaWindowClose } from "react-icons/fa";
@@ -25,6 +25,7 @@ export const Sidebar: React.FC = () => {
             path="/"
             name="Pagina inicial"
             active={asPath === "/"}
+            onClick={handleClick}
           >
             <IoHome color="#f7bb00"/>
           </ListItens>
@@ -34,6 +35,7 @@ export const Sidebar: React.FC = () => {
             path="/about"
             name="Quem somos"
             active={asPath === "/about"}
+            onClick={handleClick}
           >
             <ImQuestion color="#f7bb00"/>
           </ListItens>
@@ -43,6 +45,7 @@ export const Sidebar: React.FC = () => {
             path="/actions"
             name="Como ajudar"
             active={asPath === "/actions"}
+            onClick={handleClick}
           >
             <FaDog color="#f7bb00" />
           </ListItens>
